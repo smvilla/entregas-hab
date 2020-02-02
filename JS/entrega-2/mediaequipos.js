@@ -32,12 +32,18 @@ if (
  mediaEquipoMaria() > mediaEquipoRebeca() &&
  mediaEquipoMaria() > mediaEquipoPaula()
 ) {
- console.log(`El equpo de Maria es el que tiene la media más alta`);
+ console.log(
+  `El equpo de Maria es el que tiene la media más alta, con un valor de ${mediaEquipoMaria()}`
+ );
 } else if (
  mediaEquipoPaula() > mediaEquipoMaria() &&
  mediaEquipoPaula() > mediaEquipoRebeca()
 ) {
- console.log(`El equipo de Paula es el que tiene la media más alta`);
+ console.log(
+  `El equipo de Paula es el que tiene la media más alta, con un valor de ${mediaEquipoPaula()}`
+ );
 } else {
- console.log(`El equipo de Rebeca es el que tiene la media más alta`);
+ console.log(
+  `El equipo de Rebeca es el que tiene la media más alta, con un valor de ${mediaEquipoRebeca()}`
+ );
 }
