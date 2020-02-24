@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="es">
+ <head>
+  <title>Entrega HTML y CSS</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Ejercicio de HTML+CSS" />
+  <link rel="stylesheet" href="/css/estilos.css" />
+ </head>
+
+ <body>
+  <header class="principal">
+   <nav>
+    <ul class="cabecera">
+     <li class="uno"><a href="#descripcion">Lorem ipsum</a></li>
+     <li class="dos"><a href="#registro">Lorem ipsum</a></li>
+     <li class="tres">
+      <h1>Vacas</h1>
+     </li>
+     <li class="cuatro">
+      <a href="https://www.agroanuncios.es/anuncios/ganado/venta-de-Vacas.html"
+       >Comprar</a
+      >
+     </li>
+    </ul>
+   </nav>
+  </header>
+
+  <main>
+   <section id="descripcion">
+    <h2>Loren ipsum</h2>
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor
+     diam at pellentesque laoreet. Sed dapibus sem tellus, non efficitur orci
+     molestie mollis. Morbi venenatis gravida ex, eu pharetra urna volutpat at.
+     Curabitur eget faucibus magna. Integer a justo ligula. Nam purus nisl,
+     blandit eget iaculis at, interdum et nulla. Mauris ut ante dignissim,
+     accumsan neque at, vulputate massa. Nulla lobortis. Nam purus nisl, blandit
+     eget iaculis at, interdum et nulla. Mauris ut ante dignissim, accumsan
+     neque at, vulputate massa. Nulla lobortis, sapien sit amet hendrerit
+     ullamcorper, risus magna venenatis elit, nec condimentum nisl massa id ex.
+     Sed fermentum orci nec erat cursus cursus. Integer bibendum lacus molestie
+     metus iaculis, ac hendrerit diam ullamcorper. Mauris placerat arcu
+     pellentesque imperdiet pellentesque.
+    </p>
+   </section>
+
+   <section class="ejemplares">
+    <ul>
+     <li>
+      <article>
+       <header>
+        <img
+         src="/img/vaca1.jpeg"
+         width="200"
+         height="200"
+         alt="ejemplar vaca 1"
+        />
+        <h3>Vaca 1</h3>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident
+         dicta optio quidem! Accusamus tenetur, laborum deserunt sit officia
+         nihil nostrum reiciendis quis nam!
+        </p>
+       </header>
+       <footer>
+        <a
+         href="https://www.agroanuncios.es/anuncios/ganado/venta-de-Vacas.html"
+         >Comprar</a
+        >
+       </footer>
+      </article>
+     </li>
+
+     <li>
+      <article class="vacados">
+       <header>
+        <img
+         src="/img/vaca2.jpeg"
+         width="200"
+         height="200"
+         alt="ejemplar vaca 2"
+        />
+        <h3>Vaca 2</h3>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident
+         dicta optio quidem! Accusamus tenetur, laborum deserunt sit officia
+         nihil nostrum reiciendis quis nam!
+        </p>
+       </header>
+       <footer>
+        <a
+         href="https://www.agroanuncios.es/anuncios/ganado/venta-de-Vacas.html"
+         >Comprar</a
+        >
+       </footer>
+      </article>
+     </li>
+
+     <li>
+      <article class="vacatres">
+       <header>
+        <img
+         src="/img/vaca3.jpeg"
+         width="200"
+         height="200"
+         alt="ejemplar vaca 3"
+        />
+        <h3>Vaca 3</h3>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident
+         dicta optio quidem! Accusamus tenetur, laborum deserunt sit officia
+         nihil nostrum reiciendis quis nam!
+        </p>
+       </header>
+       <footer>
+        <a
+         href="https://www.agroanuncios.es/anuncios/ganado/venta-de-Vacas.html"
+         >Comprar</a
+        >
+       </footer>
+      </article>
+     </li>
+    </ul>
+   </section>
+
+   <section id="registro">
+    <h4>Lorem ipsum dolor sit amet, consequentur limites sulivan.</h4>
+    <form>
+     <ul class="identificacion">
+      <li>
+       <label for="user">Nome e apelidos</label>
+       <input type="text" name="user" id="user" required />
+      </li>
+      <li>
+       <label for="email">Dirección</label>
+       <input type="email" name="email" id="email" required />
+      </li>
+      <li>
+       <label for="provincia">Provincia</label>
+       <select name="provincia" id="provincia">
+        <option value="">Selecciona</option>
+        <option value="A Coruña">A Coruña</option>
+        <option value="Lugo">Lugo</option>
+        <option value="Ourense">Ourense</option>
+        <option value="Pontevedra">Pontevedra</option>
+       </select>
+      </li>
+     </ul>
+     <ul class="informacion">
+      <li>
+       <label for="text">Comentarios</label>
+       <textarea name="text" id="text" cols="100" rows="10"></textarea>
+      </li>
+      <li>
+       <label
+        >Recibir Newsletter?<input type="checkbox" name="Recibir Newsletter?"
+       /></label>
+      </li>
+     </ul>
+     <button type="submit">Enviar</button>
+    </form>
+   </section>
+  </main>
+ </body>
+</html>

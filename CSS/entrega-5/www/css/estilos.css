@@ -1,0 +1,167 @@
+* {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ box-sizing: border-box;
+ font-family: sans-serif;
+}
+
+body {
+ display: flex;
+ flex-direction: column;
+ background-color: orange;
+}
+
+ul li a {
+ text-decoration: none;
+ color: black;
+}
+header.principal {
+ min-height: 50vh;
+ background-image: url(/img/vacaencab1280.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+header nav h1 {
+ color: white;
+ font-size: 4rem;
+ text-align: center;
+}
+
+header.principal nav ul.cabecera {
+ display: flex;
+ align-items: baseline;
+ width: 95%;
+}
+header.principal nav ul.cabecera li.tres {
+ flex-basis: 100%;
+}
+
+section#descripcion p {
+ columns: 2;
+ padding: 1rem;
+}
+
+ul.cabecera li.cuatro a {
+ background-color: black;
+ color: white;
+ padding: 1rem 2rem;
+}
+
+h2 {
+ color: white;
+ text-align: left;
+ padding: 1rem;
+ font-size: 50px;
+}
+
+h3 {
+ color: white;
+ font-size: 30px;
+ text-align: center;
+}
+
+main {
+ background: orange;
+}
+
+section.ejemplares ul {
+ display: flex;
+ margin: 3rem 1rem;
+}
+section.ejemplares ul li {
+ margin: 0.5rem;
+}
+article header {
+ background-color: black;
+ color: white;
+}
+header img {
+ width: 100%;
+ max-width: 600px;
+}
+article header p {
+ font-size: 8px;
+ padding: 2rem 3rem;
+ text-align: left;
+}
+footer {
+ background-color: gray;
+ font-size: 10px;
+ text-align: center;
+ padding: 1rem 1rem;
+}
+section#registro {
+ background-color: white;
+}
+
+h4 {
+ color: orange;
+ font-size: 4rem;
+ padding: 2rem;
+}
+
+form ul {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+form ul.identificacion li {
+ display: flex;
+ flex-direction: column;
+ width: 48%;
+ margin: 1%;
+ padding: 0.5rem;
+ color: black;
+ font-weight: 600;
+ font-size: 15px;
+}
+form ul.informacion li {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ margin: 5px;
+ padding: 1rem;
+}
+
+form ul.informacion li textarea {
+ background-color: orange;
+ border-width: 2px;
+ border-color: black;
+ padding: 0.3rem;
+ margin-top: 0.4rem;
+}
+
+form ul.identificacion li input {
+ background-color: orange;
+ border-width: 2px;
+ border-color: black;
+ padding: 0.3rem;
+ margin-top: 0.4rem;
+}
+
+form ul.identificacion li select {
+ background-color: orange;
+ border-width: 2px;
+ border-color: black;
+ padding: 0.3rem;
+ margin-top: 0.4rem;
+}
+
+button {
+ margin: 1.5rem;
+ background-color: black;
+ color: white;
+ padding: 0.6rem;
+ width: 8rem;
+}
+
+//#######################
+
+@media (min-width: 600px) {
+ article header p {
+  font-size: 12px;
+  padding: 2rem 3rem;
+  text-align: left;
+ }
+}
