@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="en">
  <head>
   <title>Entrega HTML y CSS</title>
   <meta charset="utf-8" />
   <meta name="description" content="Ejercicio de HTML+CSS" />
   <link rel="stylesheet" href="/css/estilos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  </head>
 
  <body>
   <header class="principal">
+   <h1>Vacas</h1>
    <nav>
     <ul class="cabecera">
      <li class="uno"><a href="#descripcion">Lorem ipsum</a></li>
      <li class="dos"><a href="#registro">Lorem ipsum</a></li>
-     <li class="tres">
-      <h1>Vacas</h1>
-     </li>
-     <li class="cuatro">
-      <a href="https://www.agroanuncios.es/anuncios/ganado/venta-de-Vacas.html"
-       >Comprar</a
-      >
-     </li>
     </ul>
    </nav>
+   <div>
+    <a
+     class="comprar"
+     href="https://www.agroanuncios.es/anuncios/ganado/venta-de-Vacas.html"
+     >Comprar</a
+    >
+   </div>
   </header>
 
   <main>
    <section id="descripcion">
-    <h2>Loren ipsum</h2>
+    <h2>Lorem ipsum</h2>
     <p>
      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor
      diam at pellentesque laoreet. Sed dapibus sem tellus, non efficitur orci
@@ -147,15 +148,19 @@
        </select>
       </li>
      </ul>
-     <ul class="informacion">
+     <ul class="inform">
       <li>
-       <label for="text">Comentarios</label>
-       <textarea name="text" id="text" cols="100" rows="10"></textarea>
+       <label for="comentarios">Comentarios</label>
+       <textarea
+        name="comentarios"
+        id="comentarios"
+        cols="100"
+        rows="10"
+       ></textarea>
       </li>
       <li>
-       <label
-        >Recibir Newsletter?<input type="checkbox" name="Recibir Newsletter?"
-       /></label>
+       <label for="newsletter">Recibir Newsletter?</label>
+       <input type="checkbox" id="newsletter" name="newsletter" />
       </li>
      </ul>
      <button type="submit">Enviar</button>

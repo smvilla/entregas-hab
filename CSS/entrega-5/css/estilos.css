@@ -5,13 +5,9 @@
  box-sizing: border-box;
  font-family: sans-serif;
 }
-
-body {
- display: flex;
- flex-direction: column;
- background-color: orange;
+img {
+ width: 100%;
 }
-
 ul li a {
  text-decoration: none;
  color: black;
@@ -22,43 +18,42 @@ header.principal {
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center center;
-}
-header nav h1 {
- color: white;
- font-size: 4rem;
- text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
-header.principal nav ul.cabecera {
- display: flex;
- align-items: baseline;
- width: 95%;
+header.principal nav {
+ flex-grow: 0.9;
 }
-header.principal nav ul.cabecera li.tres {
- flex-basis: 100%;
+header.principal a.comprar {
+ color: white;
+ text-decoration: none;
+ background-color: black;
+ padding: 0.5rem 1rem;
+}
+
+h1 {
+ color: white;
+ font-size: 45px;
 }
 
 section#descripcion p {
  columns: 2;
  padding: 1rem;
-}
-
-ul.cabecera li.cuatro a {
- background-color: black;
- color: white;
- padding: 1rem 2rem;
+ font-size: 10px;
 }
 
 h2 {
  color: white;
  text-align: left;
  padding: 1rem;
- font-size: 50px;
+ font-size: 40px;
 }
 
 h3 {
  color: white;
- font-size: 30px;
+ font-size: 40px;
  text-align: center;
 }
 
@@ -68,10 +63,11 @@ main {
 
 section.ejemplares ul {
  display: flex;
- margin: 3rem 1rem;
+ flex-direction: column;
 }
 section.ejemplares ul li {
- margin: 0.5rem;
+ flex-grow: 1;
+ padding: 1rem;
 }
 article header {
  background-color: black;
@@ -79,16 +75,17 @@ article header {
 }
 header img {
  width: 100%;
- max-width: 600px;
+ max-width: cover;
+ object-fit: cover;
 }
 article header p {
- font-size: 8px;
+ font-size: 14px;
  padding: 2rem 3rem;
  text-align: left;
 }
 footer {
  background-color: gray;
- font-size: 10px;
+ font-size: 14px;
  text-align: center;
  padding: 1rem 1rem;
 }
@@ -98,8 +95,8 @@ section#registro {
 
 h4 {
  color: orange;
- font-size: 4rem;
- padding: 2rem;
+ font-size: 40px;
+ padding: 2rem 1rem;
 }
 
 form ul {
@@ -110,27 +107,28 @@ form ul {
 form ul.identificacion li {
  display: flex;
  flex-direction: column;
- width: 48%;
- margin: 1%;
+ width: 50%;
+ margin: 0.1;
  padding: 0.5rem;
  color: black;
  font-weight: 600;
- font-size: 15px;
+ font-size: 12px;
 }
-form ul.informacion li {
+form ul.inform li {
  display: flex;
  flex-direction: column;
  width: 100%;
  margin: 5px;
- padding: 1rem;
 }
 
-form ul.informacion li textarea {
+form ul.inform li textarea {
  background-color: orange;
  border-width: 2px;
  border-color: black;
  padding: 0.3rem;
  margin-top: 0.4rem;
+ width: 100%;
+ box-sizing: border-box;
 }
 
 form ul.identificacion li input {
@@ -139,6 +137,8 @@ form ul.identificacion li input {
  border-color: black;
  padding: 0.3rem;
  margin-top: 0.4rem;
+ width: 100%;
+ box-sizing: border-box;
 }
 
 form ul.identificacion li select {
@@ -147,26 +147,68 @@ form ul.identificacion li select {
  border-color: black;
  padding: 0.3rem;
  margin-top: 0.4rem;
+ width: 100%;
+ box-sizing: border-box;
+}
+
+ul.inform li label {
+ color: black;
 }
 
 button {
- margin: 1.5rem;
+ margin: 5px;
  background-color: black;
  color: white;
  padding: 0.6rem;
  width: 8rem;
 }
 
-@media (min-width: 1000px) {
- article header p {
-  font-size: 15px;
-  padding: 2rem 3rem;
-  text-align: left;
+@media (min-width: 700px) {
+ header.principal {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
  }
+
+ header.principal > * {
+  flex-basis: calc(100% / 3);
+ }
+
+ header.principal nav {
+  order: -1;
+  flex-grow: 0;
+ }
+
+ ul.cabecera {
+  display: flex;
+ }
+
+ ul.cabecera li {
+  margin-left: 0.5rem;
+ }
+
+ header.principal div {
+  text-align: right;
+  margin-right: 1rem;
+ }
+
+ body header h1 {
+  text-align: center;
+  flex-grow: initial;
+ }
+
+ section.ejemplares ul {
+  display: flex;
+  flex-direction: row;
+ }
+
+ section.ejemplares ul li {
+  flex-basis: calc(100% / 3);
+  margin: -0.5rem;
+ }
+
  section#descripcion p {
+  padding: 1rem;
   font-size: 15px;
- }
- footer {
-  font-size: 13px;
  }
 }
